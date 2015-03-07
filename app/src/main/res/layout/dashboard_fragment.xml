@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.innovationtechnology.iordanis.stampalapasta.ui.widget.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe">
+
+    <com.innovationtechnology.iordanis.stampalapasta.ui.widget.CompoundDrawableStateButton
+        android:id="@+id/btn_pasta"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/pasta"
+        android:onClick="onClickPasta"
+        android:text="@string/btn_pasta" />
+
+    <com.innovationtechnology.iordanis.stampalapasta.ui.widget.CompoundDrawableStateButton
+        android:id="@+id/btn_printer"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/printer"
+        android:onClick="onClickPrinter"
+        android:text="@string/btn_printer" />
+
+    <!--  Messages Button -->
+    <com.innovationtechnology.iordanis.stampalapasta.ui.widget.CompoundDrawableStateButton
+        android:id="@+id/btn_best_of"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/best_of"
+        android:onClick="onClickBestOf"
+        android:text="@string/btn_best_of" />
+
+
+</com.innovationtechnology.iordanis.stampalapasta.ui.widget.DashboardLayout>

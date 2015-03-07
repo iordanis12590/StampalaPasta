@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FooterBar" >
+    <TextView android:text="@string/dashboard_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dashboard_footer"
+        android:gravity="center"
+        android:paddingTop="3dip"/>
+</LinearLayout>

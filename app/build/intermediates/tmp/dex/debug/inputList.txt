@@ -1,0 +1,7 @@
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/classes/debug
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-244e156a1ff52b02339e260968395d79b511d8e1.jar
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-29a1e07498a62a1d0ebc596a141e77b1fa41953d.jar
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9d393a3e2d6868e3ba1dc9ed6364cf9fbaa5a6af.jar
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/classes-2fbe5a0cae0e99e7ee62b2bc156298a943b66c91.jar
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/Parse-1.8.2-d805f93ed5bde680bd1fc3f6af52c0add066ca1e.jar
+/home/iordanis/Documents/Apps/Android Apps&Libs/apps/StampalaPasta v0.1/app/build/intermediates/pre-dexed/debug/classes-fc1916214b77fc4f16cab6c1ee982ba538e12fda.jar

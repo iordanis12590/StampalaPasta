@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.innovationtechnology.iordanis.stampalapasta" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".StampaLaPastaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ui.best_of.PastaMealListActivity"
+            android:label="Pasta Meal"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.Activity" />
+        </activity>
+
+        <activity
+            android:name=".ui.best_of.NewPastaMealActivity">
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".ui.pasta.PastaShapesListActivity">
+        </activity>
+
+        <activity
+            android:name=".ui.pasta.SingleListItem">
+        </activity>
+
+
+        <!--<activity android:name=".ui.DashboardActivity"
+            android:label="Stampa la Pasta"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ui.PastaShapes"
+            android:label="Stampa la Pasta"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity"/>
+        </activity>
+
+        <activity
+            android:name=".ui.BestOf"
+            android:label="Stampa la Pasta"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity"/>
+        </activity>
+
+         <activity
+            android:name=".best_of.PastaMealListActivity"
+            android:label="PastaMealListActivity"
+            android:parentActivityName=".ui.DashboardActivity"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity"/>
+        </activity> -->
+
+    </application>
+
+</manifest>
