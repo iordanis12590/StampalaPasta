@@ -46,6 +46,7 @@ public class SingleListItem extends Activity {
                     Log.d("pasta", "Retrieved the object.");
                     parseObject.increment("counter");
                     parseObject.saveInBackground();
+                    //checking git
                 }
             }
         });
