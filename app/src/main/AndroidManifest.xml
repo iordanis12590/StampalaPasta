@@ -8,6 +8,10 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!-- enable bluetooth service -->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
     <application
         android:name=".StampaLaPastaApplication"
         android:allowBackup="true"
@@ -49,6 +53,16 @@
 
         <activity
             android:name=".ui.pasta.SingleListItem">
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".ui.printer.BluetoothPastaPrinter">
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".ui.printer.PrinterListActivity">
         </activity>
 
 

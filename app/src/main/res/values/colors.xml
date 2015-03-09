@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="dashboard_button_touch">#FFB7B2B0</color>
-    <color name="dashboard_footer">#ff000000</color>
 
     <color name="white">#ffffff</color>
     <color name="feed_bg">#d3d6db</color>

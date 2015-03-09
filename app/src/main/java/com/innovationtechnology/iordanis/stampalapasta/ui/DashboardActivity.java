@@ -10,6 +10,7 @@ import android.view.View;
 import com.innovationtechnology.iordanis.stampalapasta.R;
 import com.innovationtechnology.iordanis.stampalapasta.ui.best_of.PastaMealListActivity;
 import com.innovationtechnology.iordanis.stampalapasta.ui.pasta.PastaShapesListActivity;
+import com.innovationtechnology.iordanis.stampalapasta.ui.printer.BluetoothPastaPrinter;
 
 /**
  * Created by iordanis on 18/2/2015.
@@ -37,7 +38,7 @@ public class DashboardActivity extends ActionBarActivity {
 
     public void onClickPasta(View view) { startActivity(new Intent(this, PastaShapesListActivity.class)); }
 
-    public void onClickPrinter(View view) { startActivity(new Intent(this, DashboardActivity.class)); }
+    public void onClickPrinter(View view) { startActivity(new Intent(this, BluetoothPastaPrinter.class)); }
 
     public void onClickBestOf(View view) { startActivity(new Intent(this, PastaMealListActivity.class)); }
 }

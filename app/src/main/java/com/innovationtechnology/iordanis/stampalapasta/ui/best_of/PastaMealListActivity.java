@@ -24,6 +24,10 @@ public class PastaMealListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         getListView().setClickable(false);
 
+        //getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+
+        getActionBar().setHomeButtonEnabled(true);
+
         mainAdapter = new ParseQueryAdapter<PastaMeal>(this, PastaMeal.class);
         mainAdapter.setTextKey("title");
         mainAdapter.setImageKey("photo");

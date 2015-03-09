@@ -16,3 +16,4 @@ new product development process from its early stages so the products will be ex
 maximize customer satisfaction. Last but not least, the application patronizes customer 
 engagement behaviors, like rating and blogging about products which is expected to increase 
 behavioral manifestation towards the firm.
+
