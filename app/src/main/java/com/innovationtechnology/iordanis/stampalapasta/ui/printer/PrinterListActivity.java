@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -28,6 +29,9 @@ public class PrinterListActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.printer_list);
+
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setHomeButtonEnabled(true);
 
         mDeviceList = getIntent().getExtras().getParcelableArrayList("printers.list");
         mListView = (ListView) findViewById(R.id.printers_list);

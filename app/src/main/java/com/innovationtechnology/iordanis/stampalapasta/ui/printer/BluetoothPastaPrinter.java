@@ -10,13 +10,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.innovationtechnology.iordanis.stampalapasta.R;
+import com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -38,10 +41,25 @@ public class BluetoothPastaPrinter extends Activity{
     private BluetoothAdapter mBluetoothAdapter;
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+            case android.R.id.home:
+                Intent homeIntent = new Intent(this, DashboardActivity.class);
+                homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(homeIntent);
+        }
+        return (super.onOptionsItemSelected(menuItem));
+    }
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.printer_control_board);
+
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
 
         statusText = (TextView) findViewById(R.id.text_status);
         switchBtn = (Button) findViewById(R.id.btn_switch);

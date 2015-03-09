@@ -35,11 +35,11 @@
 
         <activity
             android:name=".ui.best_of.PastaMealListActivity"
-            android:label="Pasta Meal"
+            android:label="3D Pasta Meals"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="android.app.Activity" />
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity" />
         </activity>
 
         <activity
@@ -48,20 +48,31 @@
 
         <activity
             android:theme="@style/AppTheme"
+            android:label="Available Pasta Shapes"
             android:name=".ui.pasta.PastaShapesListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity" />
         </activity>
 
         <activity
+            android:theme="@style/AppTheme"
+            android:label="Print!"
             android:name=".ui.pasta.SingleListItem">
         </activity>
 
         <activity
             android:theme="@style/AppTheme"
+            android:label="3D Pasta Printers"
             android:name=".ui.printer.BluetoothPastaPrinter">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity" />
         </activity>
 
         <activity
             android:theme="@style/AppTheme"
+            android:label="3D Pasta Printers"
             android:name=".ui.printer.PrinterListActivity">
         </activity>
 

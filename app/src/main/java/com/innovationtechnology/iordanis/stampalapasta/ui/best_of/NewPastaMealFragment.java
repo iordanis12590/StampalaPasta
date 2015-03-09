@@ -55,9 +55,7 @@ public class NewPastaMealFragment extends Fragment {
         mealDescription = (EditText) v.findViewById(R.id.meal_description);
 
         mealRating = ((Spinner) v.findViewById(R.id.rating_spinner));
-        ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter
-                .createFromResource(getActivity(), R.array.ratings_array,
-                        android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.ratings_array, android.R.layout.simple_spinner_dropdown_item);
         mealRating.setAdapter(spinnerAdapter);
 
         photoButton = ((ImageButton) v.findViewById(R.id.photo_button));

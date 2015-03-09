@@ -3,12 +3,14 @@ package com.innovationtechnology.iordanis.stampalapasta.ui.best_of;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.innovationtechnology.iordanis.stampalapasta.R;
 import com.innovationtechnology.iordanis.stampalapasta.model.PastaMeal;
+import com.innovationtechnology.iordanis.stampalapasta.ui.DashboardActivity;
 import com.parse.ParseQueryAdapter;
 
 /**
@@ -24,8 +26,8 @@ public class PastaMealListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         getListView().setClickable(false);
 
-        //getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
-
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
         mainAdapter = new ParseQueryAdapter<PastaMeal>(this, PastaMeal.class);
@@ -60,6 +62,12 @@ public class PastaMealListActivity extends ListActivity {
             case R.id.action_new: {
                 newPastaMeal();
                 break;
+            }
+
+            case android.R.id.home: {
+                Intent homeIntent = new Intent(this, DashboardActivity.class);
+                homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(homeIntent);
             }
         }
         return super.onOptionsItemSelected(item);
