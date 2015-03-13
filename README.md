@@ -1,5 +1,7 @@
 # StampalaPasta
 
+![Dashboard](http://files.parsetfss.com/d82eea54-f049-418f-b69c-0901c9b71538/tfss-1a62f504-0f01-4c0b-9dca-90e73f006d0a-Screenshot_2015-03-13-02-13-22.png "dashboard")
+
 The mobile application relies on the existence of a Bluetooth-compatible 3D pasta printer, to
 print unique pasta products from CAD files. The app allows pasta manufacturers to promote 
 pasta product of different innovative shapes whereas the customer is able to choose the shape, 
